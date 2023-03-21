@@ -14,7 +14,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://www.google.com.tw/*"
+                "https://www.google.com.tw/*",
+                "https://*/*"
             ],
             "js": [
                 "/scripts/content.js"
