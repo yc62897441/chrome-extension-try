@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.button {
+    width: 60px;
+    height: 25px;
+    border: 2px solid #dc3545;
+    margin: 5px 0;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #dc3545;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}

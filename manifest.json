@@ -1,0 +1,26 @@
+{
+    "name": "把 google 首頁旋轉",
+    "version": "1.0",
+    "manifest_version": 3,
+    "description": "旋轉180度讓你看的不清不楚",
+    "action": {
+        "default_popup": "/popup/popup.html",
+        "default_icon": "/assets/beagle.png"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com.tw/*"
+            ],
+            "js": [
+                "/scripts/content.js"
+            ],
+            "all_frames": false,
+            "run_at": "document_idle"
+        }
+    ]
+}
